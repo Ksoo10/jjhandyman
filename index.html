@@ -10,11 +10,31 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <div class="nav-wrapper lgt-prm-bk-color">
+    <div class="flexbox-end mg-right-one pd-main-one">
+      <span class="fnt-size-sm"><a href="tel:#">Call Us</a></span>
+      <span class="fnt-size-sm"><a href="mailto:#">Email Us</a></span>
+      <div class="social-wrapper mg-right-one">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook sec-color fnt-size-md"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram sec-color fnt-size-md"></i>
+        </a>
+      </div>
+    </div>
+  </div>
   <nav>
     <div class="cstm-logo-wrapper">
-      <h2 class="logo-nav">CritterDigital</h2>
+      <img
+        src="/Images/mainlogo.svg"
+        alt="JJ's Property Services Logo"
+        class="cstm-logo"
+      />
     </div>
-    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <button class="menu-toggle fade-in" aria-label="Toggle Menu">
+      &#9776;
+    </button>
     <ul class="nav-links">
       <li class="menu-links"><a href="Home">Home</a></li>
       <li class="menu-links"><a href="/services/">Services</a></li>
@@ -26,7 +46,7 @@
       <section id="heroSection" class="lgt-prm-bk-color">
         <div class="container">
           <div class="flexbox-container">
-            <div class="hero-wrapper">
+            <div class="hero-wrapper fade-in">
               <h1 class="hero-title text-center">
                 Your Trusted Handyman for Quality Services
               </h1>
@@ -38,16 +58,13 @@
               </p>
               <div class="flexbox-btn-wrapper">
                 <button class="primary-btn">
-                  <a href="#services"></a>Contact Us
-                </button>
-                <button class="secondary-btn">
-                  <a href="#home"></a>Our Services
+                  <a href="#services"></a>Unlock Your Free Consultation
                 </button>
               </div>
             </div>
             <div class="img-wrapper">
               <img
-                src="handyman.jpg"
+                src="/Images/handyman.jpg"
                 alt="handyman"
                 class="hero-image"
                 width="500px"
@@ -64,7 +81,7 @@
               Exceptional Handyman Services <br />
               at affordable prices
             </h2>
-            <p class="offer-description">
+            <p class="offer-description mg-btm-one">
               At JJ Property Services, we pride ourselves on delivering
               top-notch craftmanship tailored to your needs. <br />Our
               commitment to quality ensures that every project is completed to
@@ -120,7 +137,7 @@
         <div class="container">
           <div class="flexbox-wrapper">
             <img
-              src="Drill.jpg"
+              src="/Images/Drill.jpg"
               alt="Drill"
               srcset=""
               width="700px"
@@ -137,21 +154,21 @@
                 deliver exceptional handyman services. Our Commitment to quality
                 craftsmanship ensures your projects are in capable hands.
               </p>
-              <h5 class="text-center">
+              <h5 class="text-center fnt-size-lg sec-color">
                 Services We Offer (Interior & Exterior)
               </h5>
               <div class="flexbox-wrapper-service">
-                <ul class="service-list">
-                  <li>Cabinets</li>
-                  <li>Flooring</li>
-                  <li>Landscaping</li>
-                  <li>Fencing</li>
+                <ul class="service-list fnt-size-md">
+                  <li><i class="fa-solid fa-check"></i>Cabinets</li>
+                  <li><i class="fa-solid fa-check"></i>Flooring</li>
+                  <li><i class="fa-solid fa-check"></i>Landscaping</li>
+                  <li><i class="fa-solid fa-check"></i>Fencing</li>
                 </ul>
-                <ul class="service-list">
-                  <li>Roofing</li>
-                  <li>Concrete Work</li>
-                  <li>Siding</li>
-                  <li>And more!</li>
+                <ul class="service-list fnt-size-md">
+                  <li><i class="fa-solid fa-check"></i>Roofing</li>
+                  <li><i class="fa-solid fa-check"></i>Concrete Work</li>
+                  <li><i class="fa-solid fa-check"></i>Siding</li>
+                  <li><i class="fa-solid fa-check"></i>And more!</li>
                 </ul>
               </div>
             </div>
@@ -161,13 +178,15 @@
       <section id="mainService">
         <div class="container">
           <div class="text-center">
-   <h2 class="service-title prm-color">Get Your Free Estimate Today</h2>
-          <p class="service-description">
-            Contact Us now to schedule a service or receive a personalized quote
-            tailored to your needs.
-          </p>
+            <h2 class="service-title prm-color">
+              Get Your Free Estimate Today
+            </h2>
+            <p class="service-description">
+              Contact Us now to schedule a service or receive a personalized
+              quote tailored to your needs.
+            </p>
           </div>
-       
+
           <div class="flexbox-btn-wrapper">
             <button class="primary-btn">
               <a href="#services"></a>Contact Us
@@ -180,7 +199,7 @@
       </section>
       <section id="faq" class="lgt-prm-bk-color">
         <div class="container">
-          <div class="text-center">
+          <div class="text-center mg-btm-one">
             <div class="header-wrapper text-center">
               <h2 class="header-title">Frequently Asked Questions</h2>
             </div>
@@ -189,9 +208,10 @@
               contact us for more information.
             </p>
           </div>
-          
-<div class="detail-container">
-<details name="notes">
+        </div>
+
+        <div class="detail-container mg-main-one">
+          <details name="notes">
             <summary>What services do you offer?</summary>
             <p class="summary-notes">
               We offer a wide range of handyman services including cabinets,
@@ -215,11 +235,53 @@
               needs.
             </p>
           </details>
-</div>
-          
+          <details name="notes">
+            <summary>How can I contact you?</summary>
+            <p class="summary-notes">
+              You can contact us through our website's contact form, by email,
+              or by phone. We are always ready to assist you with your handyman
+              needs.
+            </p>
+          </details>
+        </div>
+        <div class="text-center mg-top-one">
+          <h3 class="header-title">Have More Questions?</h3>
+          <button class="primary-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="flexbox-container-footer">
+        <div class="flexbox-center">
+          <div class="cstm-logo-wrapper">
+            <img
+              src="/Images/mainlogo.svg"
+              alt="JJ's Property Services Logo"
+              class="small-logo"
+            />
+          </div>
+          <div class="site-map">
+            <h3 class="site-map-header">About Us</h3>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms-of-service/">Terms of Service</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/terms-of-service/">Terms of Service</a>
+            <a href="/faq/">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="flexbox-center social-wrapper mg-right-one">
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook sec-color fnt-size-md"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram sec-color fnt-size-md"></i>
+        </a>
+      </div>
+    </footer>
   </body>
+  <script src="jross.js"></script>
 </html>
-
