@@ -10,9 +10,10 @@
 :root {
   /*Utilities Styles Start */
   /*Primary Colors*/
-  --primary-color: #d69a25;
+  --primary-color: #725213;
   --light-primary-color: #f6ead3;
-  --secondary-color: #879ffa;
+  --secondary-color: #c1ccf5;
+  --dark-secondary-color: #1b3183;
   --light-secondary-color: #e7ebfe;
   --highlighter-color: #de2f6b;
   /*Primary Colors*/
@@ -154,6 +155,10 @@ a {
 .sec-color {
   color: var(--secondary-color);
 }
+.dark-sec-color {
+  color: var(--dark-secondary-color);
+}
+
 .lgt-sec-color {
   color: var(--light-secondary-color);
 }
@@ -326,7 +331,7 @@ button.primary-btn {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  color: var(--dark-text-color);
+  color: var(--light-secondary-color);
   position: relative;
   text-transform: uppercase;
   text-align: center;
@@ -382,11 +387,11 @@ span.font-icons {
   font-size: 1.3rem;
   color: var(--primary-color);
   margin-bottom: 1rem;
-  margin-right: .55rem;
+  margin-right: 0.55rem;
 }
 
 i.fa-solid.fa-check {
-  color: var(--secondary-color);
+  color: var(--dark-secondary-color);
   margin-right: 0.5rem;
 }
 
@@ -415,6 +420,7 @@ details {
 summary {
   padding: 10px 10px;
   font-weight: bold;
+  color: #212121;
 }
 
 .summary-notes {
@@ -494,6 +500,11 @@ footer p {
   font-size: 10px;
   margin-bottom: 0.5rem;
 }
+.footer-logo {
+  border: none;
+  width: auto;
+  box-shadow: none;
+}
 /*Footer Style*/
 
 .fade-in {
@@ -516,7 +527,7 @@ footer p {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 75px;
+    top: 90px;
     left: 0;
     background: var(--section-colors);
     width: 100%;
