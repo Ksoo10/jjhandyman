@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JJ Handyman</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/3937ce99b0.js"
@@ -14,6 +14,7 @@
     <div class="flexbox-end mg-right-one pd-main-one">
       <span class="fnt-size-sm"><a href="tel:#">Call Us</a></span>
       <span class="fnt-size-sm"><a href="mailto:#">Email Us</a></span>
+
       <div class="social-wrapper mg-right-one">
         <a href="https://www.facebook.com/">
           <i class="fa-brands fa-facebook sec-color fnt-size-md"></i>
@@ -26,13 +27,11 @@
   </div>
   <nav>
     <div class="cstm-logo-wrapper">
-      <img
-        src="mainlogo.svg"
-        alt="JJ's Property Services Logo"
-        class="cstm-logo"
-      />
+      <h2 class="fnt-size-lg mg-left-one">
+        <a href="Home">JJ's Property Services</a>
+      </h2>
     </div>
-    <button class="menu-toggle fade-in" aria-label="Toggle Menu">
+    <button class="menu-toggle" aria-label="Toggle Menu">
       &#9776;
     </button>
     <ul class="nav-links">
@@ -43,14 +42,14 @@
   </nav>
   <body>
     <main>
-      <section id="heroSection" class="lgt-prm-bk-color">
+      <section id="heroSection" class="lgt-prm-bk-color fade-in">
         <div class="container">
           <div class="flexbox-container">
             <div class="hero-wrapper fade-in">
-              <h1 class="hero-title text-center">
+              <h1 class="hero-title fadeInUp-animation">
                 Your Trusted Handyman for Quality Services
               </h1>
-              <p class="hero-subtitle">
+              <p class="hero-subtitle pd-main-one">
                 At JJ's Property Services, we pride ourselves on delivering
                 top-notch handyman solutions that fit your budget. Let us
                 transform your home with our expert craftsmanship and dedication
@@ -62,19 +61,23 @@
                 </button>
               </div>
             </div>
+
             <div class="img-wrapper">
-              <img
-                src="handyman.jpg"
-                alt="handyman"
-                class="hero-image"
-                width="500px"
-                height="auto"
-              />
+              <picture>
+                <source srcset="handyman.jpg" />
+                <img
+                  src="handyman.jpg"
+                  alt="handyman"
+                  width="550px"
+                  height="auto"
+                  class="hero-image"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
-      <section id="offerSection">
+      <section id="offerSection" class="fade-in">
         <div class="container">
           <div class="text-wrapper text-center">
             <h2 class="offer-title prm-color">
@@ -91,10 +94,10 @@
 
           <div class="flexbox-wrapper">
             <div class="offer-item">
-              <span class="font-icons">
-                <i class="fa-solid fa-dollar-sign"></i>
-              </span>
               <h4 class="offer-item-title prm-color">
+                <span class="font-icons">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </span>
                 Affordable Rates for Every Budget
               </h4>
               <p class="offer-item-description">
@@ -102,20 +105,21 @@
               </p>
             </div>
             <div class="offer-item">
-              <span class="font-icons">
-                <i class="fa-solid fa-hammer"></i>
-              </span>
-              <h4 class="offer-item-title prm-color">Quality Craftsmanship</h4>
+              <h4 class="offer-item-title prm-color">
+                <span class="font-icons">
+                  <i class="fa-solid fa-hammer"></i> </span
+                >Quality Craftsmanship
+              </h4>
               <p class="offer-item-description">
                 Our skilled professionals bring years of experience to every
                 project, ensuring top-quality results.
               </p>
             </div>
             <div class="offer-item">
-              <span class="font-icons">
-                <i class="fa-solid fa-house-crack"></i>
-              </span>
               <h4 class="offer-item-title prm-color">
+                <span class="font-icons">
+                  <i class="fa-solid fa-house-crack"></i>
+                </span>
                 Your Trusted partner for home repairs
               </h4>
               <p class="offer-item-description">
@@ -136,14 +140,16 @@
       <section id="consultSection" class="lgt-prm-bk-color">
         <div class="container">
           <div class="flexbox-wrapper">
-            <img
-              src="Drill.jpg"
-              alt="Drill"
-              srcset=""
-              width="700px"
-              height="auto"
-              class="consult-image"
-            />
+            <picture>
+              <source srcset="Drill.jpg" />
+              <img
+                src="Drill.jpg"
+                alt="Drill"
+                width="550px"
+                height="320px"
+                class="consult-image"
+              />
+            </picture>
             <div class="wrapper">
               <h2 class="service-title sec-color">
                 Welcome to JJ's Property Services: Your trusted handyman
@@ -236,7 +242,7 @@
             </p>
           </details>
           <details name="notes">
-            <summary>How can I contact you?</summary>
+            <summary>How can you book our services?</summary>
             <p class="summary-notes">
               You can contact us through our website's contact form, by email,
               or by phone. We are always ready to assist you with your handyman
@@ -257,7 +263,7 @@
         <div class="flexbox-center">
           <div class="cstm-logo-wrapper">
             <img
-              src="mainlogo.svg"
+              src="/Images/mainlogo.svg"
               alt="JJ's Property Services Logo"
               class="small-logo"
             />
@@ -280,6 +286,7 @@
         <a href="https://www.instagram.com/">
           <i class="fa-brands fa-instagram sec-color fnt-size-md"></i>
         </a>
+        <address>Located in Wilmington, Delaware</address>
       </div>
     </footer>
   </body>
