@@ -326,7 +326,7 @@ button.primary-btn {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  color: var(--section-colors);
+  color: var(--dark-text-color);
   position: relative;
   text-transform: uppercase;
   text-align: center;
@@ -348,7 +348,7 @@ button.secondary-btn {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  color: var(--section-colors);
+  color: var(--dark-text-color);
   position: relative;
   text-transform: uppercase;
   text-align: center;
@@ -375,14 +375,14 @@ img {
 
 /*General Style*/
 .offer-item {
-  max-width: 350px;
+  max-width: 450px;
   padding: 1rem;
 }
 span.font-icons {
-  font-size: 2.5rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
-  margin-right: 0.5rem;
   margin-bottom: 1rem;
+  margin-right: .55rem;
 }
 
 i.fa-solid.fa-check {
@@ -408,24 +408,23 @@ details {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   box-sizing: border-box;
-  transition: all 0.3s;
+  margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 summary {
-  padding: 6px 10px;
-  background-size: 18px;
+  padding: 10px 10px;
   font-weight: bold;
 }
 
 .summary-notes {
-  padding: 10px;
-  border: none;
+  padding: 1rem;
+  border: 2px solid var(--dark-text-color);
   cursor: pointer;
-  color: white;
-  padding: 10px;
+  color: var(--dark-text-color);
   border-radius: 5px;
   margin-top: 1rem;
+  background-color: var(--section-colors);
 }
 /*General Style*/
 
@@ -439,6 +438,7 @@ nav {
   position: sticky;
   z-index: 1000;
   top: 0;
+  padding: 10px;
 }
 
 .nav-links {
@@ -495,6 +495,20 @@ footer p {
   margin-bottom: 0.5rem;
 }
 /*Footer Style*/
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -564,12 +578,19 @@ footer p {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    margin-left: 1rem;
   }
 
-  img.consult-image, img.hero-image {
+  img.consult-image,
+  img.hero-image {
     width: 100%;
     height: auto;
     max-width: 350px;
+  }
+
+  section {
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 
   .wrapper {
@@ -578,6 +599,7 @@ footer p {
     padding-bottom: 20px;
     position: relative;
     left: 0;
+    margin-left: 8px;
   }
 
   .site-map {
@@ -585,8 +607,11 @@ footer p {
     flex-flow: column;
     margin-right: 1rem;
   }
+  h1 {
+    font-size: 40px;
+  }
   h2 {
-    font-size: 35px;
-}
+    font-size: 30px;
+  }
 }
 /*Small devices (phones, 768px and down) */
